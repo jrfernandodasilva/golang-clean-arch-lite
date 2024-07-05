@@ -1,0 +1,11 @@
+services:
+  app:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: clean-arch-lite:unstable
+    container_name: clean-arch-lite-app
+    platform: 'linux/amd64'
+    command: sh -c "build/local/start-container.sh"
+    volumes:
+      - ./:/app
