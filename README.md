@@ -48,3 +48,30 @@ docker-compose build
 ```bash
 make clean
 ```
+
+## Structure files
+```md
+├── infra
+│   └── persistence
+│       └── memory_user_repository.go
+├── domain
+│   ├── entity
+│   │   └── user.go
+│   ├── repository
+│   │   └── user_repository.go
+│   └── usecase
+│       ├── create_user.go
+│       ├── get_user.go
+│       └── list_users.go
+├── build
+│   └── local
+│       └── start-container.sh
+├── go.sum
+├── go.mod
+├── main.go
+├── Makefile
+├── Dockerfile
+├── docker-compose.yaml
+├── LICENSE
+└── README.md
+```
